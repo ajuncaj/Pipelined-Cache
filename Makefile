@@ -16,7 +16,7 @@ LINKFLAGS = -lm
 
 
 # Compile Simulator with your 1S Simulator and Cache. Change my_p1s_sim.o to inst_p1s_sim.<system>.o if using ours
-simulator: cache.c inst_p1s_sim.ubuntu.o
+simulator: cache.c my_p1s_sim.o
 	$(CXX) $(CXXFLAGS) $^ $(LINKFLAGS) -o $@
 
 # Compile your 1S Simulator to link with Cache
